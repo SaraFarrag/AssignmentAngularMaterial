@@ -1,0 +1,27 @@
+<!-- home menu component-->
+<div class="home-container">
+
+    <!--description of menu item selected-->
+    <section>
+        <app-menu-description></app-menu-description>
+    </section>
+       
+    <!--summary cards-->
+    <section>
+        <div class="summary-card-container">
+            <div *ngFor="let summaryItem of summaryItems" class="summary-card">
+                <div class="summary-details">
+                    <h2>345</h2>
+                    <p>Total Orders</p>
+                </div>
+                <mat-icon class="summary-card-icon" aria-hidden="false" aria-label="Example home icon" fontIcon="shopping_cart"></mat-icon>
+            </div>
+        </div>
+        
+    </section>
+    
+    <section>
+    
+    </section>
+       
+</div>

@@ -1,0 +1,14 @@
+<!-- side bar component-->
+<div class="sidebar-container" >
+    <h4 class="title">MENU</h4>
+    <!-- list for dynamic display of menu item list-->
+    <ul>
+        <li *ngFor="let menu of menuList" [class.menuItemSelected]="menuItemsSelected === menu.name" (click)="changeMenuItem(menu.name)">
+            <div class="menu-list-container">
+                <mat-icon style="margin-top:20px" aria-hidden="false" aria-label="Example home icon" fontIcon="dashboard"></mat-icon>
+                <p class="menu-item">{{menu.name}}</p>
+            </div>
+        </li>
+        
+    </ul>
+</div>
